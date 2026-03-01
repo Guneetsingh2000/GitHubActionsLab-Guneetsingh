@@ -12,10 +12,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: OS info (Linux)
+      - name: Show OS Info
         run: uname -a
 
-      - name: Create file and display (Linux)
+      - name: Create and Display File
         run: |
           echo "Hello from Ubuntu" > os.txt
           cat os.txt
@@ -26,10 +26,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: OS info (Windows)
+      - name: Show OS Info
         run: systeminfo
 
-      - name: Create file and display (Windows)
+      - name: Create and Display File
         run: |
           echo Hello from Windows > os.txt
           type os.txt
@@ -40,10 +40,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: OS info (macOS)
+      - name: Show OS Info
         run: uname -a
 
-      - name: Create file and display (macOS)
+      - name: Create and Display File
         run: |
           echo "Hello from macOS" > os.txt
           cat os.txt
